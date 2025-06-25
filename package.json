@@ -1,0 +1,29 @@
+{
+  "name": "dashboard_app",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch ./server.js",
+    "test": "npm run test -w e2e --silent",
+    "dev": "node browser-sync.js",
+    "test:modal": "npm run test:modal -w e2e --silent",
+    "test:flashcards_api_get": "npm run test:flashcards_api_get -w e2e --silent",
+    "test:flashcards_api_post": "npm run test:flashcards_api_post -w e2e --silent"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-dev-server": "^11.0.0",
+    "jest-puppeteer": "^11.0.0",
+    "browser-sync": "^3.0.4",
+    "puppeteer": "^24.7.1"
+  },
+  "overrides": {
+    "glob": "11.0.1"
+  },
+  "workspaces": [
+    "e2e"
+  ]
+}

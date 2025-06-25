@@ -1,0 +1,16 @@
+{
+    "name": "e2e",
+    "type": "module",
+    "scripts": {
+      "test": "NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest",
+      "test:modal": "npm run test -- flashcards.test.js --testNamePattern='Add New Word Check'",
+      "test:flashcards_api_get": "npm run test -- getflashcards.test.js",
+      "test:flashcards_api_post": "npm run test -- postflashcards.test.js"
+    },
+    "devDependencies": {
+      "jest": "^29.7.0",
+      "jest-dev-server": "^11.0.0",
+      "jest-puppeteer": "^11.0.0",
+      "puppeteer": "^24.7.1"
+    }
+  }
