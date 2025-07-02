@@ -102,31 +102,39 @@
             <h1 class="section-title">Flashcards</h1>
           </header>
           <div class="section-body">
-            <!-- 暗記カード追加ボタンを作成してください -->
-
-            <div id="word-modal" class="modal hidden">
-  <div class="modal-content">
-    <h2 class="modal-title">Add New Card</h2>
-    <form id="word-form" class="modal-form">
-      <div class="form-group">
-        <label class="form-label">Front (Word)</label>
-        <input type="text" id="word-input" class="form-input" required />
-      </div>
-      <div class="form-group">
-        <label class="form-label">Back (Meaning)</label>
-        <textarea id="meaning-input" class="form-input" required></textarea>
-      </div>
-      <div class="modal-actions">
-        <button type="button" class="cancel-word">Cancel</button>
-        <button type="submit" class="save-word">Save</button>
-      </div>
-    </form>
-  </div>
+           
+          <!-- 暗記カード追加ボタンを作成してください -->
+<div class="add-word-container">
+  <button class="add-word">
+    <span class="ri-add-line"></span>
+    <span>Add New Card</span>
+  </button>
 </div>
-<!-- 暗記カード追加のモーダルを作成してください --> 
+
+<!-- 暗記カード追加のモーダルを作成してください -->
+ <div id="word-modal" class="modal hidden">
+<div class="modal-content">
+  <h2 class="modal-title">Add New Card</h2>
+  <form id="word-form" class="modal-form">
+    <div class="form-group">
+      <label class="form-label">Front (Word)</label>
+      <input type="text" id="word-input" class="form-input" required />
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Back(meaning)</label>
+      <textarea id="meaning-input" class="form-input" required></textarea>
+    </div> 
+
+    <div class="modal-actions">
+      <button type="button" class="cancel-word">Cancel</button>
+       <button type="submit" class="save-word">Save</button>
+    </div>
+     </form>
+</div>
+</div>
             <!-- カードリスト -->
             <div class="flashcards-list" id="flashcards-list"></div>
-          </div>
         </section>
         <!-- End 暗記カードセクション -->
       </main>
